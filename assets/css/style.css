@@ -1,0 +1,681 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 12vh;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px 4px rgba(0, 0, 0, 0.1);
+    position: sticky !important;
+    top: 0;
+    z-index: 5;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100px; */
+}
+
+.navbar-nav li a {
+    /* margin-right: 20px; */
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #000 !important;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    transition: 0.1s ease all 0s;
+}
+
+.nav-list{
+    display: flex; justify-content: space-between;flex-wrap: wrap;
+}
+.navbar-toggler {
+    /* position: absolute;
+    top: 30%;
+    right: 10%; */
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow 0.15s ease-in-out;
+}
+.modal-backdrop{
+    z-index: 0 !important;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.login {
+  padding: 1px 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 27px;
+    text-transform: capitalize;
+    background: #FE7E6D !important;
+    border-radius: 4px;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* banner section stylings starts here */
+.card {
+    border: none;
+}
+
+.card-title {
+    font-family: 'Poppins ' sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    text-transform: capitalize;
+}
+
+.card-text {
+    width: 65%;
+    font-family: 'Poppins';
+    font-weight: 200 !important;
+    font-size: 20px;
+    line-height: 30px;
+
+
+
+}
+
+/* banner section stylings ends here */
+
+
+/* tabs or pannel section stylings goes here */
+.search-section {
+    width: 100%;
+    min-height: 900px;
+    background-color: #F2F1EF;
+}
+
+.nav-tabs {
+    position: relative;
+    bottom: 30px;
+    right: 10px;
+    border: none;
+}
+
+#exTab2 {
+    /* position: absolute; */
+    width: 100%;
+    min-height: 235px;
+
+    top: -71px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.panel .panel-heading .nav-tabs {
+    margin-bottom: 1px;
+}
+
+.list-items {
+    padding: 10px;
+    background-color: #fff;
+    margin: 2px;
+}
+
+.list-items {
+    color: #000;
+    width: 120px;
+    height: 42px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.list-items:checked {
+    color: #fff;
+    width: 120px;
+    height: 42px;
+    border-radius: 10px 10px 0px 0px;
+    background: #7900FF;
+}
+
+.list-items:hover {
+    color: #F2F1EF;
+    background: #7900FF;
+}
+
+.search-field-1 {
+    padding: 0px 5rem;
+    width: 22%;
+    height: 55px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(207, 205, 205, 0.16);
+    border-radius: 6px;
+    border: 2px solid rgb(230, 228, 228);
+}
+.traveller-menu{
+    width: 230px !important;
+}
+.pass-items{
+    height: 60px;
+}
+.pass-title{
+    font-family: 'Lato', sans-serif !important;
+font-style: normal;
+font-weight: 600 !important;
+font-size: 20px;
+text-transform: capitalize;
+color: #7900FF;
+}
+#ul{
+    padding-left: 0 !important;
+}
+.pass-years{
+    color: #6C6C6C;
+    font-size: 12px;
+}
+.decrement,.increment{
+   height: 24px;
+    width: 24px;background-color: #EFEFEF;
+    border: none;
+    font-size: 16px !important;
+}
+
+
+.search-field-1::placeholder {
+    padding: 0px .5rem !important;
+}
+
+.location-img {
+    position: relative;
+    left: 70px;
+}
+
+
+
+.advance {
+    width: 100%;
+    margin: auto 40px;
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.adv-search {
+    padding: 0px 5rem;
+    width: 36%;
+    height: 55px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(207, 205, 205, 0.16);
+    border-radius: 6px;
+    border: 2px solid rgb(230, 228, 228);
+
+}
+
+.btn-search {
+    width: 163px;
+    height: 50px;
+    background: linear-gradient(96.57deg, #FE7E6D 34.37%, #7900FF 97.52%);
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 18px;;font-weight: 600;
+}
+
+.search-button {
+    position: relative !important;
+    right: 110px;
+}
+
+/* service section stylings goes here */
+
+.service-section {
+    width: 100%;
+    min-height: 221px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.service {
+    height: 230px;
+}
+
+.service-content {
+    padding: 15px 35px;
+    width: 45% !important;
+}
+
+.service-info {
+    width: 45%;
+}
+
+/* service section stylings ends here */
+
+
+/* slider section stylings goes here */
+.slider-section {
+    width: 100%;
+    min-height: 80vh;
+    background: #FFFFFF;
+}
+.slider-title{
+    display: flex;align-items: center;justify-content: center;min-height: 20vh;
+}
+.locations{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+.locations img{
+    margin: 25px;
+
+}
+.c-text{
+    /* width: 200px; */
+    position: absolute;
+    bottom:270px;
+    left: 140px;
+    font-size: 18px !important;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    
+    
+}
+.card-texts{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.c-text:hover{
+
+ background: #FE7E6D;
+    border-radius: 4px;
+}
+
+
+/* slider section goes here */
+
+/* hotel section stylings goes here */
+.hotel-section {
+    width: 100%;
+    min-height: 60vh;
+    background: #F5F5F5;
+}
+
+.hotel {
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hotel-image {
+    width: 45%;
+}
+
+.hotel-content {
+    width: 45%;
+}
+
+.more-btn {
+    outline: none;
+    border: none;
+    width: 133px;
+    height: 45px;
+    background: #FE7E6D;
+    box-shadow: 0px 4px 4px rgba(164, 160, 160, 0.06);
+    border-radius: 4px;
+    color: #fff;
+}
+
+/* hotel section stylings goes here */
+
+/* news letter section starts here */
+.news-letter {
+    min-height: 45vh;
+    background: #7900FF;
+}
+
+.subscribe {
+
+    min-height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.subscribe-input {
+    border: none;
+    outline: none;
+    width: 667px;
+    height: 50px;
+    background: #FFFFFF;
+    border-radius: 6px 0px 0px 5px;
+}
+.subscribe-input::placeholder{
+    padding: 0px 40px;
+}
+.subscribe-btn {
+    border: none;
+    outline: none;
+    z-index: 5;
+    width: 213px;
+    height: 50px;
+    background: #FE7E6D;
+    border-radius: 0px 6px 6px 0px;
+    color: #fff;
+    font-size: 17px;
+}
+.footer-vector{
+    min-height: 35vh;
+    background: #7900FF;
+    width: 100%;
+}
+.footer-menu{
+ text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;min-height: 40vh;
+    flex-wrap: wrap;
+
+}
+.title-1{
+    color: rgb(255, 255, 255);
+    margin-left: 24px;
+}
+.menu-list li a{
+    /* font-size: 24px !important; */
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin:  auto;
+    line-height: 2;
+    color: rgb(255, 255, 255) !important; 
+}
+.menus,.menu-icons{
+    width: 24%;
+    margin: auto;
+}
+.bx{
+    padding: 9px;
+    background-color: #7900ff;
+    color: #fff;
+    border-radius: 26px;
+    margin: 3px 10px;
+    
+}
+.bx:hover{
+    background-color: #fff;
+    color:#7900ff ;
+}
+.country-code{
+    width: 20% !important;
+}
+.number{
+    width: 70% !important;
+}
+/* news letter section ends here */
+
+/* media quires starts here */
+
+@media screen and (min-width:320px) and (max-width:410px){
+    .service-section {
+        width: 100%;
+        min-height: 308vh !important;
+        background: #FFFFFF;
+        border-radius: 8px;
+    }
+    
+}
+@media screen and (max-width:568px){
+    .carousel {
+        position: relative !important;
+        top: -35px !important;
+    }
+    .select-2{
+        margin-top: 20px !important;
+        margin-bottom: 5px !important;
+    }
+    .menus,.menu-icons{
+        width: 80%;
+        margin: auto;
+    }
+    .menu-icons .d-flex {
+        display: flex!important;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+    .bx{
+
+        margin: 3px 4px;
+    }
+    .nav-list{
+        position: relative;
+        right: 35px;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .navbar-nav li a {
+        line-height: 2.5;
+    }
+    .nav-list{
+        max-width: 30%;
+        margin: auto;
+    }
+    .one-way{
+        padding-left:  0px !important;
+    }
+    .search-field-1 {
+        width: 100%;
+        padding: 0px 5rem;
+    }
+    .advance {
+        width: 100%;
+        margin: auto;
+        flex-direction: column;
+    }
+    .search-button {
+        position: relative !important;
+        right: 0px;
+    }
+    .adv-search {
+        padding: 0px 5rem;
+        width: 100%;
+    }
+    .search p{
+        text-align: center;
+    }
+    .location-img {
+        position: relative;
+        left: 35px;
+        top: 45px;
+    }
+    .logo-section{
+        width: 94%;
+        margin: auto;
+    }
+    .service-content {
+        padding: 15px 35px;
+        width: 100% !important;
+    }
+    .service-info {
+        padding: -1px 35px;
+        width: 92% !important;
+        margin: auto !important;
+    }
+    .hotel-image,.hotel-image img {
+        width: 100%;
+    }
+    .hotel-content {
+        width: 100%;
+    }
+    .subscribe-input {
+        width: 100%;
+    }
+    .more-btn{
+        margin-bottom: 40px !important;
+    }
+    .subscribe-btn{
+        margin-bottom: 30px !important;
+        margin-top: 30px !important;
+    }
+    .subscribe {
+
+        width: 85%;
+        margin: auto;
+    }
+    ul{
+        padding-left: 15px !important;
+    }
+    .nav-link{
+        padding: 0.5rem 0rem !important;
+    }
+    .service-section {
+        width: 100%;
+        min-height: 138vh !important;
+        background: #FFFFFF;
+        border-radius: 8px;
+    }
+    .menus,.menu-icons{
+        width: 70%;
+        margin: auto;
+        height: 200px;
+    }
+}
+
+
+
+
+@media screen and (min-width:768px){
+    .menu-icons .d-flex {
+        display: flex!important;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:3000px) {
+
+    .navbar-nav li a {
+        /* margin-right: 20px; */
+        margin-left: 28px;
+        color: #000 !important;
+        font-family: "poppins" !important;
+        font-size: 14px;
+        transition: 0.1s ease all 0s;
+    }
+
+    .navbar-collapse {
+        flex-grow: 0 !important;
+    }
+}
+
+
+
+
+/* card slider stylin gs goes here */
+
+.text {
+    display: table;
+    margin: 20px auto;
+  }
+  .t-dropdown-block {
+    width: 200px;
+    height: 28px;
+    margin: 20px auto;
+    position:relative
+  }
+  
+  .t-dropdown-list {
+    display: none;
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    z-index: 10;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, .3);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 150px;
+    overflow: auto;
+    position: absolute;
+    margin-top: 10px;
+  }
+  
+  .t-dropdown-item {
+    padding: 5px 20px;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .t-dropdown-item:hover {
+    background-color: #F1F1F1;
+  }
+  
+  .t-dropdown-select {
+    border: 1px solid #DDD;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    background-color: #FFF;
+    box-sizing: content-box;
+  }
+  
+  .t-dropdown-input {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0 3px 0 10px;
+    box-sizing: border-box;
+  }
+  
+  .t-select-btn {
+    background-image: url(https://cdn4.iconfinder.com/data/icons/ui-indicatives/100/Indicatives-26-128.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 7px 7px;
+    position: absolute;
+    width: 30px;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-left: 1px solid #DDD;
+  }
+  
+  .t-select-btn:active {
+    background-color: #F1F1F1;
+  }
